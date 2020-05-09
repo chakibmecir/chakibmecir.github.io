@@ -126,6 +126,11 @@ ul {
   font-weight: 600;
 }
 
+.info ul li a{
+color: #fff;
+text-decoration: none;
+}
+
 .info i {
   font-size: 18px;
 }
