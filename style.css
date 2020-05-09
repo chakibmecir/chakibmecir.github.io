@@ -140,12 +140,13 @@ text-decoration: none;
   top: 50%;
   right: 40px;
   transform: translateY(-50%);
+   text-shadow: 0 0 5px rgba(255, 255, 255, 0.616), 0 0 10px rgba(255, 255, 255, 0.575), 0 0 10px rgba(255, 255, 255, 0.589), 0 0 10px rgba(125, 210, 218, 0.719), 0 0 30px rgba(125, 210, 218, 0.74), 0 0 40px rgba(125, 210, 218, 0.74), 0 0 35px rgba(125, 210, 218, 0.74), 0 0 35px rgba(125, 210, 218, 0.76);
 }
 
 .text h1 {
   font-size: 70px;
   color: #fff;
-  font-family: 'Raiderfont';
+  font-family: 'Montserrat';
   text-transform: uppercase;
 }
 
