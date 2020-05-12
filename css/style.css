@@ -1,0 +1,374 @@
+@font-face {
+  font-family: 'Raiderfont';
+  src: local('Raiderfont'), url('./fonts/Raiderfont.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat';
+  font-size: 12px;
+  width: 100%;
+  height: 100vh;
+  
+}
+
+ul {
+  list-style: none;
+}
+
+.left,
+.right {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+}
+
+.left {
+  background: #7DD2DA;
+  left: 0%;
+  width: 0%;
+}
+
+.right {
+  background: #060e18;
+  right: 0%;
+  width: 100%;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+}
+
+.nav ul li {
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 8px;
+  font-weight: 600;
+  padding: 0 30px;
+}
+
+.nav .logo {
+  flex: 1;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.nav .menu {
+  flex: 1;
+  font-size: 18px;
+}
+
+.nav .collection {
+  flex: 1;
+}
+
+.nav .explore {
+  flex: 4;
+}
+
+.nav .search {
+  flex: 3;
+}
+
+.nav .profile {
+  flex: 0;
+}
+
+.nav .profile .img {
+  background-image: url('./img/profile.jpg');
+  background-position: 50%;
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.img-wrapper {
+  position: absolute;
+  bottom: 1%;
+  left: 0;
+}
+
+.img-wrapper .karina {
+  background-image: url('/img/prez.png');
+  background-size: cover;
+  height: 560px;
+  width: 0;
+}
+
+.info {
+  position: absolute;
+  bottom: 2%;
+  left: 180px;
+  background: rgba(0, 0, 0, .8);
+  padding: 0 10px;
+}
+
+.info ul li {
+  display: inline-block;
+  padding: 20px 25px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.info ul li a{
+color: #fff;
+text-decoration: none;
+}
+
+.info i {
+  font-size: 18px;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+   text-shadow: 0 0 5px rgba(255, 255, 255, 0.616), 0 0 10px rgba(255, 255, 255, 0.575), 0 0 10px rgba(255, 255, 255, 0.589), 0 0 10px rgba(125, 210, 218, 0.719), 0 0 30px rgba(125, 210, 218, 0.74), 0 0 40px rgba(125, 210, 218, 0.74), 0 0 35px rgba(125, 210, 218, 0.74), 0 0 35px rgba(125, 210, 218, 0.76);
+}
+
+.text h1 {
+  font-size: 70px;
+  color: #fff;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+}
+
+.text p {
+  font-size: 20px;
+  color: #fff;
+  font-family: monospace;
+}
+
+.name {
+  position: absolute;
+  top: 50%;
+  left: -270px;
+  transform: translateY(-50%);
+  font-size: 90px;
+  font-family: 'Raiderfont';
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+}
+
+.bottomnav {
+  position: absolute;
+  bottom: 38%;
+  right: 3%;
+}
+
+.bottomnav ul li {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  margin-top: 20px;
+}
+
+.bottomnav ul li:nth-child(2) {
+  font-weight: bolder;
+}
+
+.bottomnav ul li:nth-child(2)::before {
+  content: "";
+  display: inline-block;
+  border: 1px solid #fff;
+  width: 65px;
+  margin: 0 10px 0 -78px;
+  transform: translateY(-3px);
+}
+
+.bottomnav ul li:nth-child(1) {
+  display: none
+}
+.bottomnav ul li:nth-child(3) {
+  display: none
+}
+
+/*  container pour scroll */
+.container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+}
+.container section{
+  min-width: 100%;
+  height: 100vh;
+  display: flex;
+}
+/*  section skills */
+.sect2{
+  background-color: #060e18;
+  position: relative;
+}
+.sect2 h1{
+  position: absolute;
+  left: 42%;
+  top: 13%;
+  font-size: 60px;
+  color: #fff;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.616), 0 0 10px rgba(255, 255, 255, 0.575), 0 0 10px rgba(255, 255, 255, 0.589), 0 0 10px rgba(125, 210, 218, 0.719), 0 0 30px rgba(125, 210, 218, 0.74), 0 0 40px rgba(125, 210, 218, 0.74), 0 0 35px rgba(125, 210, 218, 0.74), 0 0 35px rgba(125, 210, 218, 0.76);
+}
+
+/*  card skills */
+.conteneur{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  top: 35%;
+}
+.conteneur .card{
+  position: relative;
+  max-width: 270px;
+  height: 215px;
+  background-color: #7DD2DA;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 202px rgba(0,0,0,0,5);
+  transition: 0.5s ease-in-out;
+  border-radius: 4px;
+}
+.conteneur .card:hover{
+height: 320px;
+}
+
+.conteneur .card .imgBx{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  top: -40px;
+  left:20px;
+  z-index: 1;
+}
+.conteneur .card .imgBx img{
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.conteneur .card .contenuBx {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.conteneur .card:hover .contenuBx{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
+.contenuBx h2{
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+}
+.contenuBx p{
+  font-family: monospace;
+  
+}
+
+.sect3{
+  background-color:#7DD2DA;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  top: 100%;
+}
+
+.sect3 .titlep{
+  left: 35%;
+  top: 17%;
+}
+
+.sect3 .split{
+  width: 100%;
+  height: 50vh;
+  background-color: #060e18;
+}
+
+/*  slick slider */
+.slick-slide{
+  margin: 0 20px;
+}
+
+.slick-slide img{
+  height: 130px;
+  width: 170px;
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box; 
+}
+
+.slick-list{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+padding: 0;
+}
+
+.slick-track{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.slick-slide{
+  display: none;
+  float: left;
+  height: 10%;
+  min-height: 1px;
+}
+
+.slick-slide img {
+  display: block;
+  filter: grayscale(1);
+  transition: 1s;
+}
+
+.slick-slide img:hover{
+  filter: grayscale(0);
+}
+.slick-initialized .slick-slide{
+  display: block;
+}
+
+.customer-logos{
+  top: 120%;
+}
