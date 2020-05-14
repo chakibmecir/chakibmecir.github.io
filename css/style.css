@@ -366,6 +366,7 @@ padding: 0;
 
 .slick-slide img:hover{
   filter: grayscale(0);
+  transform: scale(120%);
 }
 .slick-initialized .slick-slide{
   display: block;
