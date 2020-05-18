@@ -22,12 +22,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb{
-  background:linear-gradient(transparent,#7DD2DA);
+  background:#7DD2DA;
   border-radius:6px;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-  background:linear-gradient(transparent,#34435E);
+  background:#34435E;
 }
 
 ul {
