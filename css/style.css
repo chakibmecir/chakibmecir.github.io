@@ -27,7 +27,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover{
-  background:linear-gradient(transparent,#fff);
+  background:linear-gradient(transparent,#34435E);
 }
 
 ul {
